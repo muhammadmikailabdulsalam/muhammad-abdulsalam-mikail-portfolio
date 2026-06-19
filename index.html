@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Abdulsalam Mikail - Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:#f4f4f4;
+}
+
+header{
+    background-color:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background-color:#0055aa;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+.profile-photo{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:6px solid #0055aa;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+    box-shadow:0 0 20px rgba(0,85,170,0.5);
+    animation:float 3s ease-in-out infinite;
+    transition:0.5s;
+}
+
+.profile-photo:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 35px rgba(0,85,170,0.9);
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Muhammad Abdulsalam Mikail</h1>
+    <p>Software Engineering Student | Northwest University</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="trustpay.html">TrustPay</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+<img src="profile.jpeg"
+     alt="Muhammad Abdulsalam Mikail"
+     class="profile-photo">    <h1>Welcome To My Portfolio Website</h1>
+    <p>
+        I am Muhammad Abdulsalam Mikail,
+        a Software Engineering student at
+        Northwest University.
+    </p>
+</section>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Who Am I?</h2>
+        <p>
+            I am passionate about software development,
+            web design, mobile applications, and solving
+            real-world problems through technology.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Programming Languages</h2>
+        <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>XML</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Featured Project</h2>
+        <p>
+            TrustPay - A secure digital payment system
+            designed to improve online transactions and
+            user trust.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Muhammad Abdulsalam Mikail</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications - Muhammad Abdulsalam Mikail</title>
+
+  <style>
+    /* ── Reset ── */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* ── Header ── */
+    header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header p {
+      margin-top: 5px;
+      font-size: 15px;
+      color: #cce0ff;
+    }
+
+    /* ── Navigation ── */
+    nav {
+      background-color: #0055aa;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: yellow;
+    }
+
+    nav a.active {
+      color: yellow;
+      border-bottom: 2px solid yellow;
+      padding-bottom: 3px;
+    }
+
+    /* ── Page Hero ── */
+    .hero {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .hero h1 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      width: 60px;
+      height: 4px;
+      background-color: #0055aa;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ── Container ── */
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px 20px 40px;
+    }
+
+    /* ── Cert Card ── */
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* Card top row: title + badge */
+    .cert-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .cert-meta h2 {
+      color: #003366;
+      font-size: 1.2rem;
+    }
+
+    .cert-meta .issuer {
+      font-size: 14px;
+      color: #777;
+      margin-top: 4px;
+    }
+
+    .cert-meta .issuer span {
+      color: #0055aa;
+      font-weight: bold;
+    }
+
+    /* Verified badge */
+    .cert-badge {
+      background-color: #e6f0ff;
+      border: 1px solid #0055aa;
+      color: #0055aa;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* Certificate image placeholder */
+    .cert-image-wrapper {
+      background-color: #f4f4f4;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      color: #999;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /*
+      HOW TO ADD YOUR CERTIFICATE IMAGE:
+      1. Save your certificate screenshot as "cert-responsive.jpg"
+         in the same folder as this HTML file.
+      2. Delete the <div class="cert-image-wrapper"> block below.
+      3. Replace it with:
+         <img src="cert-responsive.jpg"
+              alt="Responsive Web Design Certificate"
+              style="width:100%;border-radius:8px;margin-bottom:18px;" />
+    */
+
+    .cert-image-wrapper .icon {
+      font-size: 2.5rem;
+    }
+
+    /* Description text */
+    .cert-description {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    /* Topics covered */
+    .topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .topic-tag {
+      background-color: #e6f0ff;
+      border: 1px solid #b3ccff;
+      color: #003366;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    /* View certificate button */
+    .cert-link {
+      display: inline-block;
+      background-color: #003366;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .cert-link:hover {
+      background-color: #0055aa;
+    }
+
+    /* Coming Soon card */
+    .card-coming-soon {
+      opacity: 0.55;
+      border: 2px dashed #ccc;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Muhammad Abdulsalam Mikail</h1>
+    <p>Software Engineering Student | Northwest University</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="trustpay.html">TrustPay</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Page Hero -->
+  <div class="hero">
+    <h1>My Certifications</h1>
+    <p>Verified credentials earned through freeCodeCamp's project-based curriculum.</p>
+    <div class="divider"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+
+    <!-- ── Certification 1 ── -->
+    <div class="card">
+      <div class="cert-meta">
+        <div>
+          <h2>Responsive Web Design</h2>
+          <p class="issuer">Issued by <span>freeCodeCamp</span> &middot; 2024</p>
+        </div>
+        <span class="cert-badge">&#10003; Verified</span>
+      </div>
+
+      <!--
+        HOW TO ADD YOUR CERTIFICATE IMAGE:
+        1. Save your certificate screenshot as "cert-responsive.jpg" (or .png)
+           in the same folder as this HTML file.
+        2. Delete the entire <div class="cert-image-wrapper"> block below.
+        3. Replace it with:
+           <img src="cert-responsive.jpg"
+                alt="Responsive Web Design Certificate"
+                style="width:100%;border-radius:8px;margin-bottom:18px;" />
+      -->
+      <img src="mamman-cert.jpeg"
+                alt="Responsive Web Design Certificate"
+                style="width:100%;border-radius:8px;margin-bottom:18px;" />
+
+      <p class="cert-description">
+        This certification covers building responsive websites using HTML and CSS.
+        It includes 300+ hours of coursework across visual design, accessibility,
+        CSS Flexbox, CSS Grid, and five hands-on certification projects reviewed
+        and verified by freeCodeCamp.
+      </p>
+
+      <div class="topics">
+        <span class="topic-tag">HTML5</span>
+        <span class="topic-tag">CSS3</span>
+        <span class="topic-tag">Flexbox</span>
+        <span class="topic-tag">CSS Grid</span>
+        <span class="topic-tag">Accessibility</span>
+        <span class="topic-tag">Responsive Design</span>
+        <span class="topic-tag">Visual Design</span>
+      </div>
+
+      <!--
+        Replace the href="#" below with the actual certificate URL, e.g.:
+        href="https://www.freecodecamp.org/certification/muhammad/responsive-web-design"
+      -->
+      <a href="https://www.freecodecamp.org/certification/muhammad-abdulsalam-mikail/responsive-web-design" target="_blank" class="cert-link">
+        &#128279; View Certificate on freeCodeCamp
+      </a>
+    </div>
+
+    <!-- ── Coming Soon ── -->
+    <div class="card card-coming-soon">
+      <div class="cert-meta">
+        <div>
+          <h2>JavaScript Algorithms &amp; Data Structures</h2>
+          <p class="issuer">Issued by <span>freeCodeCamp</span> &middot; In Progress</p>
+        </div>
+        <span class="cert-badge" style="background:#f4f4f4; border-color:#ccc; color:#999;">
+          Coming Soon
+        </span>
+      </div>
+      <p class="cert-description">
+        Currently working through the JavaScript Algorithms and Data Structures curriculum.
+        This certification will cover variables, loops, functions, arrays, and algorithm scripting.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Muhammad Abdulsalam Mikail</p>
+  </footer>
+
+</body>
+</html>

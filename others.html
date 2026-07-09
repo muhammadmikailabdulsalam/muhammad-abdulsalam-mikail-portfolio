@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Others | AbdulMuiz Sunusi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0f1117;
+    color:#e2e8f0;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.25rem 2rem;
+    border-bottom:1px solid #1e2332;
+    position:sticky;
+    top:0;
+    background:#0f1117;
+    z-index:100;
+}
+
+.nav-logo{
+    font-weight:700;
+    font-size:1.1rem;
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    gap:1.75rem;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#94a3b8;
+    font-size:.9rem;
+    transition:.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:#38bdf8;
+}
+
+/* ================= HEADER ================= */
+
+.page-header{
+    text-align:center;
+    padding:4rem 2rem 2rem;
+}
+
+.page-header h1{
+    font-size:2.3rem;
+    color:#f1f5f9;
+}
+
+.page-header p{
+    color:#64748b;
+    margin-top:.5rem;
+}
+
+.divider{
+    width:60px;
+    height:3px;
+    background:#38bdf8;
+    margin:1.5rem auto 3rem;
+    border-radius:999px;
+}
+
+/* ================= CONTENT ================= */
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    padding-bottom:4rem;
+}
+
+.card{
+    background:#1e2332;
+    border:1px solid #2d3a52;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#f1f5f9;
+}
+
+video,
+iframe{
+    width:100%;
+    border-radius:8px;
+}
+
+audio{
+    width:100%;
+    margin-top:10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    padding:2rem;
+    border-top:1px solid #1e2332;
+    color:#475569;
+    font-size:.8rem;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+    <span class="nav-logo">AbdulMuiz.dev</span>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certs</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="others.html" class="active">Others</a></li>
+    </ul>
+</nav>
+
+<div class="page-header">
+    <h1>Others 🎬🎵</h1>
+    <p>Videos, audio clips and other media.</p>
+    <div class="divider"></div>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h3>My Video</h3>
+
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Short Audio Clip</h3>
+
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+
+    </div>
+
+    <div class="card">
+
+        <h3>YouTube Video</h3>
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/E4sxmoEYhqg"
+            title="YouTube video"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2025 AbdulMuiz Sunusi — Built with HTML & CSS
+</footer>
+
+</body>
+</html>

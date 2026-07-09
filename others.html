@@ -31,40 +31,28 @@ a{
 
 /* ================= NAVBAR ================= */
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:1.25rem 2rem;
-    border-bottom:1px solid #1e2332;
-    position:sticky;
-    top:0;
-    background:#0f1117;
-    z-index:100;
-}
+ nav {
+      background-color: #0055aa;
+      padding: 10px;
+      text-align: center;
+    }
 
-.nav-logo{
-    font-weight:700;
-    font-size:1.1rem;
-    color:#38bdf8;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+    }
 
-.nav-links{
-    display:flex;
-    gap:1.75rem;
-    list-style:none;
-}
+    nav a:hover {
+      color: yellow;
+    }
 
-.nav-links a{
-    color:#94a3b8;
-    font-size:.9rem;
-    transition:.2s;
-}
-
-.nav-links a:hover,
-.nav-links a.active{
-    color:#38bdf8;
-}
+    nav a.active {
+      color: yellow;
+      border-bottom: 2px solid yellow;
+      padding-bottom: 3px;
+    }
 
 /* ================= HEADER ================= */
 
